@@ -2,7 +2,7 @@ import axios from "axios";
 
 // instancia básica de axios
 const api = axios.create({
-  baseURL: "/",
+  baseURL: import.meta.env.BASE_URL,
 });
 
 // función para obtener los stays
